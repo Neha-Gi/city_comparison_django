@@ -1,24 +1,26 @@
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Application definition
-DEFAULT_APPS = [  "django.contrib.admin",
+DEFAULT_APPS = [
+    "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "django.contrib.staticfiles",]
+    "django.contrib.staticfiles",
+]
 
 CUSTOM_APPS = [
-    #USER DEFINED APPS
+    # USER DEFINED APPS
 ]
 THIRD_PARTY_APPS = [
-    #EXTERNAL APPS
+    # EXTERNAL APPS
 ]
 
-INSTALLED_APPS = [*DEFAULT_APPS,*CUSTOM_APPS, *THIRD_PARTY_APPS]
+INSTALLED_APPS = [*DEFAULT_APPS, *CUSTOM_APPS, *THIRD_PARTY_APPS]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -68,7 +70,6 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
-
 
 
 # Static files (CSS, JavaScript, Images)

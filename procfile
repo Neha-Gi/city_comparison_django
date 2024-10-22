@@ -1,0 +1,1 @@
+web: make prod-m && make prod-gunicorn
